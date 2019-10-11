@@ -9,48 +9,51 @@
   background-image:url(https://www.keremeosreview.com/wp-content/uploads/2019/09/18539157_web1_graffiti-find-the-bomb-KTW-1280x720.jpg);  
   }
 </style>
-
+    <center>
     <form action="contact.php" method="POST">
         <fieldset>
-        <legend><h4>FORM PENDAFTARAN</h4></legend>
-        <p>
+        <legend style="font-size: 30px;"><h4>FORM PENDAFTARAN</h4></legend>
+        <p style="font-size:140%;">
             <label>Nama:</label>
             <input type="text" name="nama" placeholder="Nama lengkap..." />
         </p>
-        <p>
+        <p style="font-size:140%;">
             <label>Username:</label>
             <input type="text" name="username" placeholder="Username..." />
         </p>
-        <p>
+        <p style="font-size:140%;">
             <label>Email:</label>
             <input type="email" name="email" placeholder="Your email..." />
         </p>
-        <p>
+        <p style="font-size:140%;">
             <label>Password:</label>
-            <input type="password" name="password" placeholder="Passowrd..." />
+            <input type="password" name="password" placeholder="Password..." />
         </p>
         <p>
-            <label>Jenis kelamin:</label>
+            <label><p style="font-size: 140%;">Jenis kelamin:</p></label>
             <label><input type="radio" name="jenis_kelamin" value="laki-laki" /> Laki-laki</label>
             <label><input type="radio" name="jenis_kelamin" value="perempuan" /> Perempuan</label>
         </p>
-        <p>
+        <p style="font-size: 140%;">
             <label>Agama:</label>
             <select name="agama">
                 <option value="islam">Islam</option>
                 <option value="kristen">Kristen</option>
                 <option value="hindu">Hindu</option>
                 <option value="budha">Budha</option>
+                <option value="budha">Katolik</option>
             </select>
         </p>
-        <p>
+        <p style="font-size: 140%;">
             <label>Alamat</label>
             <input type="Alamat" name="Alamat" placeholder="Alamat...." />
         </p>
         <p>
-            <input type="submit" name="submit" value="Daftar" />
+            <input style="color: blue;" type="submit" name="submit" value="Daftar" /><input style="color: blue;"  type="submit" name="submit" value="Cancel" />
         </p>
+
         </fieldset>
     </form>
+    </center>
 </body>
 </html>
