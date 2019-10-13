@@ -1,0 +1,77 @@
+body{
+	font-family: sans-serif;
+	 background-image: url('image.jpg');
+    background-size: cover;
+}
+ 
+h1{
+	text-align: center;
+	font-weight: 300;
+}
+div{
+	background-color: darkorange;
+	padding: 1px;
+}
+h2{
+	text-align: center;
+	font-weight: 300;
+}
+ 
+.tulisan_login{
+	text-align: center;
+	text-transform: uppercase;
+	width: 350px;
+	margin: -10px ;
+	padding: 0px 5px;
+}
+ 
+.kotak_login{
+	width: 350px;
+	background: darkorange;
+	margin: 120px auto;
+	padding: 30px 20px;
+}	
+ 
+label{
+	font-size: 11pt;
+	padding: 20px;
+	margin-bottom: 5px;
+}
+.kotak input[type="Email"],
+.kotak input[type="Username"],
+.kotak input[type="Password"],
+.kotak input[type="Confirm Password"]
+{
+    font-size: 13px;
+    width: 80%;
+    height: 40px;
+    padding: 0 10px;
+    background: #eeeeee;
+    border:none;
+    color: #808080;
+}
+ .form_login{
+	/*membuat lebar form penuh*/
+	box-sizing : border-box;
+	width: 100%;
+	padding: 10px;
+	font-size: 11pt;
+	margin-bottom: 20px;
+}
+ 
+.link{
+	
+	font-size: 11pt;
+	text-align: right;
+	line-height:21px;
+	padding: 3px;
+	float: right;
+}
+.linked{
+	font-size: 11pt;
+	text-align: right;
+	text-indent: 5px;
+	padding-bottom: : 5px;
+	padding: 5px;
+	float: right;
+}
