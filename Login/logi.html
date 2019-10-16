@@ -6,26 +6,45 @@
 </head>
 <body>
 	<div>
-	<h1>E-BOOK</h1>
-	<h2><b>Membaca Dengan Mudah</b></h2>
+		<h1>E-BOOK</h1>
+		<h2><b>Membaca Dengan Mudah</b></h2>
 	</div>
 	<br>
 	<br>
 	<br>
 	<div class="kotak_login">
-	<p class="tulisan_login"><h2>Login</h2></p>
-	<form>
-	<label>Username:</label><br>
-    <input type="Username" name="Username" placeholder="Username..." />
+		<p class="tulisan_login"><h2>Login</h2></p>
+	<form action="beranda.html">
+		<label>Username:</label><br>
+    	<input type="Username" name="Username" placeholder="Username..." required />
     <p>
     </p>
     <label>Password:</label><br>
-    <input type="Password" name="Password" placeholder="Password..." />
+    <input type="Password" name="Password" placeholder="Password..." required />
 			<br>
 			<br/>
-			<a class="linked">back</a>
-			<a class="link">Login</a>
+
+			<button onclick="login()">Login</button>
+			<button><a href="../index.html">Back</a></button>
+
+			<!-- <a class="link">Login</a> -->
 
 	</form>
+	<a class="link" href="../Sign Up/Sign Up.html">Belum punya akun? Daftar Sekarang</a>
+	
+
+	<script type="text/javascript">
+		function login(){
+			var user = document.getElementsByName('Username').value;
+			var pass = document.getElementsByName('Password').value;
+			if (user==ilham) {
+				if (pass=="123") {
+					window.location.href ="beranda.html";
+				}else{
+					window.alert("password salah");
+				}
+			}
+		}
+	</script>
 </body>
 </html>
