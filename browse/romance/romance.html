@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Romance</title>
+   
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"/>
+    <style type="text/css">
+      body{
+  font-family: sans-serif;
+  background-color:#FFDEAD ;
+  background-size: cover;
+  margin: 0;
+
+}
+ 
+h1{
+  text-align: center;
+  font-weight: 300;
+}
+div{
+  background-color: darkorange;
+  padding: 1px;
+}
+h2{
+  text-align: center;
+  font-weight: 300;
+}
+.main{
+  float: right;
+  font-size: 13pt;
+  text-align: left;
+  background:#FFDEAD;
+  height: 20px;
+    width: 100%;
+}
+.lb-nav ul{
+  margin:0;
+  list-style: none;
+  background-color: #ffdead;
+  width:100%;
+  float: left;
+}
+
+.lb-nav ul li{
+  float: left;
+  display: inline-table;
+  padding: 20px 40px;
+}
+.lb-list ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.lb-list li {
+  float: right;
+}
+
+.lb-list li a {
+  text-align: left;
+  display: inline-table;
+  padding: 16px;
+  text-decoration: none;
+  margin-top: -50px;
+}
+
+.browse {
+  float: left;
+  overflow: hidden;
+}
+
+.browse .dropbtn {
+  font-size: 16px;  
+  color: black;
+  padding: 14px 16px;
+  background-color: #ffdead;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .browse:hover .dropbtn {
+  background-color: red;
+}
+
+.browse-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.browse-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.browse-content a:hover {
+  background-color: #ddd;
+}
+
+.browse:hover .browse-content {
+  display: block;
+}
+.mybooks {
+  float: left;
+  overflow: hidden;
+}
+
+.mybooks .dropbtn {
+  font-size: 16px;  
+  color: black;
+  padding: 14px 16px;
+  background-color: #ffdead;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .mybooks:hover .dropbtn {
+  background-color: red;
+}
+
+.mybooks-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.mybooks-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.mybooks-content a:hover {
+  background-color: #ddd;
+}
+
+.mybooks:hover .mybooks-content {
+  display: block;
+}
+.lainlain {
+  float: left;
+  overflow: hidden;
+}
+.lainlain .dropbtn {
+  font-size: 16px;  
+  color: black;
+  padding: 14px 16px;
+  background-color: #ffdead;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .lainlain:hover .dropbtn {
+  background-color: red;
+}
+
+.lainlain-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.lainlain-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.lainlain-content a:hover {
+  background-color: #ddd;
+}
+
+.lainlain:hover .lainlain-content {
+  display: block;
+}
+    </style>
+</head>
+<body>
+  <div>
+  <h1>E-BOOK</h1>
+  <h2><b>Membaca Dengan Mudah</b></h2>
+  </div>
+  <div class="lb-nav">
+    <ul>
+        <div class="lainlain">
+    <button class="dropbtn">
+      <i class="fa fa-bars"></i>
+    </button>
+    <div class="lainlain-content">
+      <a href="../../Develope Center/Develope Center.html">develope center</a>
+      <a href="../../help and support/help and support.html">help & center</a>
+      <a href="#">add book</a>
+    </div>
+  </div> 
+     <div class="browse">
+    <button class="dropbtn">browse 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="browse-content">
+      <a href="#">art</a>
+      <a href="#">musik</a>
+      <a href="#">religi</a>
+      <a href="#">recipes</a>
+      <a href="#">fantasy</a>
+      <a href="#">romance</a>
+      <a href="#">science</a>
+      <a href="#">biography</a>
+    </div>
+  </div>  
+  <div class="mybooks">
+    <button class="dropbtn">mybooks
+      <i class="fa fa-caret-down"></i>
+    </button>   
+<div class="mybooks-content">
+      <a href="../../my reding log/my reding log.html">my reading</a>
+      <a href="../../my list/my list.html">my book</a>
+      <a href="../../my loans/my loans.html">my loans</a>
+</div>
+</div>
+</ul>
+<center>
+  <ul>
+  <form style="margin-top: -40px;">               
+      <input class="search" type="search" placeholder="Search...">               
+      <input class="button" type="submit" value="Search"> 
+  </form>
+</center>
+</ul>
+    <div class="lb-nav" style="float: right; margin-top: -30px;margin-right: 10px; background: #FFDEAD">
+      <ul><a href="../../index.html">Log Out</a>
+      </ul>
+    </div>
+    <br>
+    <br>
+    <br>
+  <h3><a href="Romance" style="float: left;margin-left: 100px">Romance</a>
+      <p style="float: right; margin-right: 200px; font-size: 14px">last edited by <a href="ilham h">ilham h</a></p>
+  </h3>
+<br>
+<br>
+<a href="../../masuk ke buku/masuk ke buku.html"><img src="buku 1.jpg"></a>
+<img src="buku 2.jpg">
+<img src="buku 3.jpg">
+<img src="buku 4.jpg">
+<br>
+<br>
+<br>
+<center>
+</center>
+<br>
+<br>
+<br>
+<br>
+<br>
+</body>
+</html>
