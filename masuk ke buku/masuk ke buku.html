@@ -258,7 +258,7 @@ h2{
   </h3>
 <br>
 <br>
-<img src="buku 1.jpg"> 
+<img src="buku 1.jpg">
 <p> Yang Sabar Ya Boss
 
 <p>Ucapan spontan ( Sebagai Motivasi) yang terlotar begitu saja saat melihat kondisi atau situasi teman, yang sedang jenuh dengan berbagai aktivitas dan rutinitas, buku ini cocok untuk dijadikan teman atau menemani Anda pada situasi jenuh dalam berbagai aktivitas harian yang kita jalani, Buku yang anda pegang ini saya sebut Drawing and Coloring for Adult, The Doodle Art, adalah gabungan dari buku mewarnai dan buku gambar, buku ini akan membantu anda mengusir kejenuhan dengan mewarnai Doodles pada tiap lembaran-lembaran awal buku ini dan we give you a space to create your own doodles pada lembaran-lembaran halaman kosong pada akhir bagian buku ini. So...lets have fun! ekspresikan perasaan, suasana hatimu dengan mewarnai dan menggambar doodlemu sendiri...
@@ -280,6 +280,49 @@ h2{
 <br>
 <br>
 <br>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+<div class="lol">
+    <div id="tempat-display" style="border: 1px solid"></div>
+</div>
+
+
+<script type="text/javascript">
+   $(function() {
+    ajaxJS();
+    function ajaxJS(e) {
+      if (e) {
+        e.preventDefault();
+      }
+      $.ajax({
+        url: "https://raw.githubusercontent.com/RichmondDay/public/master/test_vehicle_inventory_data.json",
+        method: "GET",
+        success: function(data) {
+          console.log(data);
+          data = jQuery.parseJSON(data);
+          var html_to_append = '';
+          $.each(data, function(i, item) {
+            html_to_append +=
+            '<div class="col-3 mb-3"><div class="text-uppercase"><p>' +
+            item.Name + 
+            '<div class="col-3 mb-3"><div class="ext-uppercase"><p>' +
+            item.Price +
+            '</p></div><p class="company">' +
+            item.Retailer +
+            '</p></div><hr>';
+          });
+          $("#tempat-display").html(html_to_append);
+        },
+        error: function() {
+          console.log(data);
+        }
+      });
+
+    }
+
+  });
+</script>
 </body>
 </html>
 
