@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Book</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+    <style type="text/css">
+body{
+	font-family: sans-serif;
+	 background-image: url('image.jpg');
+    background-size: 100% 100%;
+    margin: 0;
+}
+ 
+h1{
+	text-align: center;
+	font-weight: 300;
+}
+div{
+	background-color: darkorange;
+	padding: 1px;
+}
+h2{
+	text-align: center;
+	font-weight: 300;
+}
+ 
+.tulisan_login{
+	text-align: center;
+	text-transform: uppercase;
+	width: 350px;
+	margin: -10px ;
+	padding: 0px 5px;
+}
+ 
+.kotak_login{
+	width: 350px;
+	background: darkorange;
+	margin: 120px auto;
+	padding: 30px 20px;
+}	
+ 
+label{
+	font-size: 11pt;
+	padding: 20px;
+	margin-bottom: 5px;
+}
+.kotak input[type="Title"],
+.kotak input[type="Author"],
+.kotak input[type="Who is the publisher?"],
+.kotak input[type="When was it published"]
+{
+    font-size: 13px;
+    width: 80%;
+    height: 40px;
+    padding: 0 10px;
+    background: #eeeeee;
+    border:none;
+    color: #808080;
+}
+ .form_login{
+	/*membuat lebar form penuh*/
+	box-sizing : border-box;
+	width: 100%;
+	padding: 10px;
+	font-size: 11pt;
+	margin-bottom: 20px;
+}
+ a:link, a:visited {
+  background-color: brown;
+  font-size: 12px;
+  color: white;
+  padding: 5px 6px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+</style>
+</head>
+    <body>
+	<div>
+	<h1>E-BOOK</h1>
+	<h2><b>Membaca Dengan Mudah</b></h2>
+	</div>
+	<br>
+	<br>
+	<br>
+	<div class="kotak_login">
+	<p class="tulisan_login"><h4>Add a book to E-BOOK</h4></p>
+	<form>
+	<div class="kotak">
+	<label>Title:</label>
+    <input type="Title" name="" required />
+    <p>
+    </p>
+    <label>Author</label>
+    <input type="Author" name="" placeholder="" required />
+	<p>
+    </p>
+    <label>Who is the publisher?</label>
+    <input type="Who is the publisher?" name="" placeholder="" required />
+    <p>
+    </p>
+    <label>When was it published</label>
+    <input type="When was it published" name="" placeholder="" required />
+			<br>
+			<br/>
+			<a href="../my list/my list.html" target="_blank">Add</a>
+	</div>
+	</form>
+</body>
+</html>
